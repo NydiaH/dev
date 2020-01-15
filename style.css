@@ -1,0 +1,30 @@
+body{
+    margin: 100px;
+}
+div{   
+    font-family: Arial, Helvetica, sans-serif;
+    color:white;
+   font-size: 25px;
+
+    /* this is how text align in the middle */
+    text-align: center;
+    line-height: 300px;
+    
+    width:300px;
+    height:300px;
+    /* add this line turn square to circle */
+    border-radius:50%;
+    background-color: transparent;
+    background-image:linear-gradient(0deg,aqua, rgb(60, 151, 212));
+    transition:1s;
+    transition-property: transform, background-image;
+}
+div:hover{
+    width:400px;
+    height:400px;
+     /* add this line make the circle transfer back to square */
+    border-radius:0;
+
+    transform:rotate(45deg);
+    background-image:linear-gradient(0deg,hotpink,darkred)
+}
